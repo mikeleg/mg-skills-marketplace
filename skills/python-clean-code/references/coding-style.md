@@ -107,6 +107,7 @@ Always place imports at the top of the file, immediately after module docstrings
 
 ```python
 """Module docstring goes first."""
+
 # Standard library
 import os
 from pathlib import Path
