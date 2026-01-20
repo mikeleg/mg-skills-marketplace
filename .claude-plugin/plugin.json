@@ -2,13 +2,16 @@
   "name": "mg-skills-marketplace",
   "version": "1.0.0",
   "description": "A curated collection of skills to extend Claude's capabilities with specialized knowledge, workflows, and tools",
-  "author": "MG Skills Marketplace",
+  "author": {
+    "name": "MG Skills Marketplace",
+    "email": "mg-skills@example.com"
+  },
   "homepage": "https://github.com/YOUR_USERNAME/mg-skills-marketplace",
+  "repository": "https://github.com/YOUR_USERNAME/mg-skills-marketplace",
   "license": "MIT",
-  "skills": [
-    "skills/python-clean-code"
-  ],
+  "skills": "./skills/",
   "keywords": [
+    "skills",
     "python",
     "clean-code",
     "best-practices",
