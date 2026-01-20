@@ -12,12 +12,23 @@ A curated collection of skills to extend Claude's capabilities with specialized 
 
 ### For Claude Code CLI (Recommended)
 
-This is a Claude Code plugin that bundles multiple skills. Install it once to get all the skills.
+This is a Claude Code plugin marketplace that bundles multiple skills. You can install it as a marketplace or install individual plugins.
 
-**Option 1: Install from GitHub (Recommended)**
+**Option 1: Add as Marketplace (Recommended)**
 
 ```bash
-# Install directly from repository
+# Add the marketplace to Claude Code CLI
+claude
+> /plugin marketplace add https://github.com/YOUR_USERNAME/mg-skills-marketplace
+
+# Then install skills from the marketplace
+> /plugin install python-clean-code
+```
+
+**Option 2: Install Entire Marketplace as Plugin**
+
+```bash
+# Install all skills at once
 claude plugin install https://github.com/YOUR_USERNAME/mg-skills-marketplace
 
 # Or clone first, then install
@@ -25,7 +36,14 @@ git clone https://github.com/YOUR_USERNAME/mg-skills-marketplace.git
 claude plugin install ./mg-skills-marketplace
 ```
 
-**Option 2: Manual Installation**
+**Option 3: Install Individual Skills**
+
+```bash
+# Install specific skill directly
+claude plugin install https://github.com/YOUR_USERNAME/mg-skills-marketplace/skills/python-clean-code
+```
+
+**Option 4: Manual Installation**
 
 ```bash
 # Clone the repository
@@ -36,17 +54,19 @@ cd mg-skills-marketplace
 ./install.sh --global --all
 ```
 
-**Managing the Plugin:**
+**Managing Plugins:**
 
 ```bash
-# List installed plugins
-claude plugin list
+# List installed plugins and marketplaces
+claude
+> /plugin list
+> /plugin marketplace list
 
-# Update the plugin
-claude plugin update mg-skills-marketplace
+# Update plugins from marketplace
+> /plugin update python-clean-code
 
-# Uninstall the plugin
-claude plugin uninstall mg-skills-marketplace
+# Uninstall plugins
+> /plugin uninstall python-clean-code
 ```
 
 ### For Claude Desktop/Web
@@ -108,12 +128,16 @@ mg-skills-marketplace/
 ├── CONTRIBUTING.md            # Contribution guidelines
 ├── install.sh                # Manual installation script
 ├── uninstall.sh              # Manual uninstallation script
-├── .claude-plugin/           # Plugin configuration
-│   └── plugin.json           # Plugin metadata
+├── .claude-plugin/           # Marketplace configuration
+│   ├── plugin.json           # Marketplace as a plugin
+│   └── marketplace.json      # Marketplace catalog
 └── skills/
     └── python-clean-code/
-        ├── SKILL.md           # Skill metadata and instructions
-        ├── scripts/           # Executable utilities (init_project.py)
+        ├── .claude-plugin/
+        │   └── plugin.json   # Skill plugin metadata
+        ├── SKILL.md           # Skill instructions
+        ├── scripts/           # Executable utilities
+        │   └── init_project.py
         └── references/        # Detailed documentation
             ├── coding-style.md
             ├── project-structure.md

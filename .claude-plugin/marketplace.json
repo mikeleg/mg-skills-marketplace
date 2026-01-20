@@ -1,0 +1,32 @@
+{
+  "name": "mg-skills-marketplace",
+  "owner": {
+    "name": "MG Skills Marketplace",
+    "email": "mg-skills@example.com"
+  },
+  "metadata": {
+    "description": "A curated collection of skills to extend Claude's capabilities with specialized knowledge, workflows, and tools",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "python-clean-code",
+      "source": "./skills/python-clean-code",
+      "description": "Write clean, maintainable Python code with PEP 8, type hints, and pragmatic clean architecture",
+      "version": "1.0.0",
+      "author": {
+        "name": "MG Skills Marketplace"
+      },
+      "keywords": [
+        "python",
+        "clean-code",
+        "best-practices",
+        "development",
+        "type-hints",
+        "pep8",
+        "architecture"
+      ],
+      "category": "Development"
+    }
+  ]
+}
