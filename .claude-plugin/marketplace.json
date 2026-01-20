@@ -2,7 +2,7 @@
   "name": "mg-skills-marketplace",
   "owner": {
     "name": "MG Skills Marketplace",
-    "email": "mg-skills@example.com"
+    "email": "mgsoluzioni@gmail.com"
   },
   "metadata": {
     "description": "A curated collection of skills to extend Claude's capabilities with specialized knowledge, workflows, and tools",
@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "python-clean-code",
-      "source": "./skills/python-clean-code",
+      "source": "./",
       "description": "Write clean, maintainable Python code with PEP 8, type hints, and pragmatic clean architecture",
       "version": "1.0.0",
       "author": {
