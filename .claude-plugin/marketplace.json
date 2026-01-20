@@ -4,10 +4,6 @@
     "name": "MG Skills Marketplace",
     "email": "mgsoluzioni@gmail.com"
   },
-  "metadata": {
-    "description": "A curated collection of skills to extend Claude's capabilities with specialized knowledge, workflows, and tools",
-    "version": "1.0.0"
-  },
   "plugins": [
     {
       "name": "python-clean-code",
