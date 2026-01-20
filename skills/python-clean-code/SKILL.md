@@ -109,6 +109,7 @@ my-project/
 
 - **Coding conventions**: See [references/coding-style.md](references/coding-style.md) for naming, type hints, imports, docstrings
 - **Project architecture**: See [references/project-structure.md](references/project-structure.md) for clean architecture patterns, dependency injection, anti-patterns
+- **API projects**: See [references/vertical-slice-api.md](references/vertical-slice-api.md) for FastAPI vertical slice structure
 
 ## Code Review Checklist
 
