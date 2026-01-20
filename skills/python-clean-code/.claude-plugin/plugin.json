@@ -2,11 +2,12 @@
   "name": "python-clean-code",
   "version": "1.0.0",
   "description": "Write clean, maintainable Python code following PEP 8, type hints, and pragmatic clean architecture. Use when writing Python code, creating new Python projects, refactoring existing code, or reviewing Python implementations.",
-  "author": "MG Skills Marketplace",
+  "author": {
+    "name": "MG Skills Marketplace",
+    "email": "mg-skills@example.com"
+  },
   "license": "MIT",
-  "skills": [
-    "."
-  ],
+  "skills": ".",
   "keywords": [
     "python",
     "clean-code",
