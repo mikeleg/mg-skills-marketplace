@@ -189,3 +189,53 @@ def calculate_compound_interest(
 
     return principal * (1 + rate / compounds_per_period) ** (compounds_per_period * periods)
 ```
+
+## Nested Functions
+
+Never define functions inside other functions. Extract them as module-level functions or methods.
+
+```python
+# ❌ Bad - nested function
+def process_orders(orders: list[Order]) -> list[Result]:
+    def calculate_total(order: Order) -> Decimal:
+        return sum(item.price * item.qty for item in order.items)
+
+    def apply_discount(total: Decimal, customer: Customer) -> Decimal:
+        if customer.is_vip:
+            return total * Decimal("0.9")
+        return total
+
+    results = []
+    for order in orders:
+        total = calculate_total(order)
+        final = apply_discount(total, order.customer)
+        results.append(Result(order_id=order.id, total=final))
+    return results
+
+
+# ✅ Good - module-level functions
+def _calculate_order_total(order: Order) -> Decimal:
+    return sum(item.price * item.qty for item in order.items)
+
+
+def _apply_customer_discount(total: Decimal, customer: Customer) -> Decimal:
+    if customer.is_vip:
+        return total * Decimal("0.9")
+    return total
+
+
+def process_orders(orders: list[Order]) -> list[Result]:
+    results = []
+    for order in orders:
+        total = _calculate_order_total(order)
+        final = _apply_customer_discount(total, order.customer)
+        results.append(Result(order_id=order.id, total=final))
+    return results
+```
+
+Why avoid nested functions:
+- Harder to test in isolation
+- Cannot be reused elsewhere
+- Increases cognitive load
+- Hides complexity instead of managing it
+
