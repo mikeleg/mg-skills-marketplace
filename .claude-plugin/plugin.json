@@ -4,12 +4,11 @@
   "description": "A curated collection of skills to extend Claude's capabilities with specialized knowledge, workflows, and tools",
   "author": {
     "name": "MG Skills Marketplace",
-    "email": "mg-skills@example.com"
+    "email": "mgsoluzioni@gmail.com"
   },
   "homepage": "https://github.com/YOUR_USERNAME/mg-skills-marketplace",
   "repository": "https://github.com/YOUR_USERNAME/mg-skills-marketplace",
   "license": "MIT",
-  "skills": "./skills/",
   "keywords": [
     "skills",
     "python",
