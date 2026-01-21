@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "python-clean-code",
-      "source": "./",
+      "source": "./skills/python-clean-code",
       "description": "Write clean, maintainable Python code with PEP 8, type hints, and pragmatic clean architecture",
       "version": "1.0.0",
       "author": {
