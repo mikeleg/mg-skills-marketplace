@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "A curated collection of skills to extend Claude's capabilities with specialized knowledge, workflows, and tools",
   "author": {
-    "name": "MG Skills Marketplace",
+    "name": "mikeleg",
     "email": "mgsoluzioni@gmail.com"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/mg-skills-marketplace",
-  "repository": "https://github.com/YOUR_USERNAME/mg-skills-marketplace",
+  "homepage": "https://github.com/mikeleg/mg-skills-marketplace",
+  "repository": "https://github.com/mikeleg/mg-skills-marketplace",
   "license": "MIT",
   "keywords": [
     "skills",
