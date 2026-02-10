@@ -1,7 +1,11 @@
 ---
 name: python-subagent
 description: Dispatch a Python implementation task to a dedicated subagent pre-loaded with python-clean-code conventions. Use when executing Python tasks from a plan that must follow project coding standards.
+tools: Read, Write, Edit, Bash, Glob, Grep
+model: sonnet
 ---
+
+
 
 # Python Subagent Dispatcher
 

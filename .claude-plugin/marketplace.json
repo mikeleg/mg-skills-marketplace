@@ -16,9 +16,6 @@
       "skills": [
         "./skills/python-clean-code"
       ],
-      "agents": [
-         "./python-subagent.md"
-      ],
       "category": "Development"
     }
   ]
