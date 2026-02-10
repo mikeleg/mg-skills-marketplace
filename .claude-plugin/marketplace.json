@@ -1,0 +1,22 @@
+{
+  "name": "mg-skills-marketplace",
+  "owner": {
+    "name": "Michele Gatti",
+    "email": "mgsoluzioni@gmail.com"
+  },
+  "metadata": {
+    "description": "MG Soluzioni marketplace skills",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "python-clean-code",
+      "description": "Write clean, maintainable Python code with PEP 8, type hints, and pragmatic clean architecture",
+      "source": "./",
+      "skills": [
+        "./skills/python-clean-code"
+      ],
+      "category": "Development"
+    }
+  ]
+}

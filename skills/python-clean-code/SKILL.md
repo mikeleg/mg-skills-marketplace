@@ -7,6 +7,16 @@ description: Write clean, maintainable Python code following PEP 8, type hints, 
 
 Write clean, maintainable Python code with proper structure and conventions.
 
+## When Triggered
+
+When activated, **immediately read the relevant reference files** and apply guidelines without asking for confirmation:
+
+- **For any Python code**: Read `references/coding-style.md`
+- **For project structure decisions**: Read `references/project-structure.md`
+- **For FastAPI/API projects**: Read `references/vertical-slice-api.md`
+
+Always apply these guidelines proactively and automatically.
+
 ## Core Principles
 
 1. **Type hints always** - Every function signature and class attribute
@@ -105,10 +115,13 @@ my-project/
 └── tests/
 ```
 
-## Detailed References
+## Reference Files
 
-- **Coding conventions**: See [references/coding-style.md](references/coding-style.md) for naming, type hints, imports, docstrings
-- **Project architecture**: See [references/project-structure.md](references/project-structure.md) for clean architecture patterns, dependency injection, anti-patterns
+The following reference files are automatically consulted when this skill is triggered:
+
+- **`references/coding-style.md`** - Comprehensive Python coding conventions: naming, type hints, imports, docstrings, and best practices
+- **`references/project-structure.md`** - Clean architecture patterns, dependency injection, project layout, and common anti-patterns
+- **`references/vertical-slice-api.md`** - FastAPI vertical slice architecture for feature-based API organization
 
 ## Code Review Checklist
 
