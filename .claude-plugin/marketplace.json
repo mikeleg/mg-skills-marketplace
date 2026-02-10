@@ -14,7 +14,8 @@
       "description": "Write clean, maintainable Python code with PEP 8, type hints, and pragmatic clean architecture",
       "source": "./",
       "skills": [
-        "./skills/python-clean-code"
+        "./skills/python-clean-code",
+        "./skills/python-subagent"
       ],
       "category": "Development"
     }
