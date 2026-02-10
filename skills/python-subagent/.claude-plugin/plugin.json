@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Dispatch a Python implementation task to a dedicated subagent pre-loaded with python-clean-code conventions. Use when executing Python tasks from a plan that must follow project coding standards.",
   "author": {
-    "name": "MG Skills Marketplace",
-    "email": "g.mikele@gmail.com"
+    "name": "Michele Gatti",
+    "email": "mgsoluzioni@gmail.com"
   },
   "license": "MIT",
   "skills": ".",
